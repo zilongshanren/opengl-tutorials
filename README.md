@@ -1,7 +1,7 @@
 opengl-tutorials
 ================
 
-翻译http://www.opengl-tutorial.org/ , http://www.scratchapixel.com/ 和 http://www.arcsynthesis.org/gltut/上面的教程
+翻译http://www.opengl-tutorial.org/ , http://www.scratchapixel.com/ 和 http://www.arcsynthesis.org/gltut/ 上面的教程
 
 备注：年后开工,教程贡献采用github的方式。
 

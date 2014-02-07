@@ -37,7 +37,7 @@ opengl-tutorial.org上面的文章全部放在opengl-tutorial目录下面。
 ###如何添加一篇新的教程
 （注：以添加opengl-tutorial.org上面的一篇教程tut02为例:）
 
-1. 第一步
+- 第一步
     	
 在opengl-tutorial目录下面新建一个文件夹：tut02.
 
@@ -46,7 +46,7 @@ opengl-tutorial.org上面的文章全部放在opengl-tutorial目录下面。
 最后新建一个zh.md文件。
 
 
-2. 第二步
+- 第二步
 		
 打开_layouts/default.html,然后找到
 
@@ -88,7 +88,7 @@ opengl-tutorial.org上面的文章全部放在opengl-tutorial目录下面。
 ```
 
 
-3. 第三步
+- 第三步
 
 在tut02/zh.md的最开头，添加下列代码:
 
@@ -109,7 +109,14 @@ section: opengl-tutorial/tut02
 
 然后，按照markdown的语法把tut02/zh.md里面的文章写完就ok了。
 
-最后，千万记得要commit,push并给我发pull request哦。
+最后，记得加上免责申明和原文链接。范文如下：
+
+```
+免责申明:免责申明（必读！）：本博客提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
+
+原文链接：http://whateverdomainis.com
+```
+
 
 
 ##贡献人列表

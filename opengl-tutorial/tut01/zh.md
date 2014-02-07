@@ -16,22 +16,22 @@ section: opengl-tutorial/tut01
 
 ##第一课： 新建一个窗口
 
-###Introduction
-Welcome to the first tutorial !
+###简介
 
-Before jumping into OpenGL, you will first learn how to build the code that goes with each tutorial, how to run it, and most importantly, how to play with the code yourself.
+欢迎来到第一课！
 
-###Prerequisites
-No special prerequisite is needed to follow these tutorials. Experience with any programming langage ( C, Java, Lisp, Javascript, whatever ) is better to fully understand the code, but not needed ;
-it will merely be more complicated to learn two things at the same time.
+在学习OpenGL之前，我们将先学习如何生成，运行，和玩转（最重要的一点）课程中的代码。
 
-All tutorials are written in “Easy C++” : Lots of effort has been made to make the code as simple as possible. No templates, no classes, no pointers.
-This way, you will be able to understand everything even if you only know Java.
+###预备知识
 
-###Forget Everything
-You don’t have to know anything, but you have to forget everything you know about OpenGL.
-If you know about something that looks like glBegin(), forget it. Here you will learn modern OpenGL (OpenGL 3 and 4) , and most online tutorials teach “old” OpenGL (OpenGL 1 and 2).
-So forget everything you might know before your brain melts from the mix.
+不需要特别的预备知识。如果你有C、Java、Lisp、Javascript等编程语言的经验，那么理解课程代码会更快；但这不是必需的；如果没有，那么也仅仅是同时学两样东西（编程语言+OpenGL）会稍微复杂点而已。
+
+课程全部用“傻瓜式C++”编写：我费了很大劲尽量让代码简单些。代码里没有模板（template）、类或指针。就是说，即使只懂Java，也能理解所有内容。
+
+###忘记一切
+如前面所说，我们不需要预备知识；但请暂时把『老式OpenGL』先忘了吧（例如glBegin()这类东西）。
+在这里，你将学习新式OpenGL（OpenGL 3和4），而多数网上教程还在讲『老式OpenGL』（OpenGL 1和2）。所以，在你的脑袋乱成一锅粥之前，把它们都搁在一边吧。
+
 
 ###Building the tutorials
 All tutorials can be built on Windows, Linux and Mac. For all these platforms, the procedure is roughly the same :

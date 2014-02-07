@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OpenGL教程{% if page.title }%} - {{page.title}}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body { padding-top: 60px; /* 60px to make the container go all the way
+      to the bottom of the topbar */ }
+    </style>
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/css/docs.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+    </style>
+  </head>
+  <body>
+    <!--<a href="https://github.com/driftyco/jetstrap-docs"><img style="position: absolute; z-index: 10000; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>-->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="/" class="brand"><img src="http://s3.amazonaws.com/jetstrap-site/images/jetstrap_logo.png"></a>
+          <ul class="nav pull-right">
+            <li><a href="http://www.zilongshanren.com">子龙山人</a></li>
+            <li><a href="http://blog.zilongshanren.com/about/">About</a></li>
+            <li><a href="http://blog.zilongshanren.com" target="_blank">Blog</a></li>
+            <li><a href="https://github.com/andyque/opengl-tutorials/tree/gh-pages" target="_blank">Fork This!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <ul id="menu" class="nav nav-list" data-spy="affix">
+            <li class="nav-header">OpenGL教程</li>
+            <li data-section=""><a href="/">Home</a></li>
+            <li class="nav-header">opengl-tutorial.org</li>
+            <li data-section="opengl-tutorial/tut01"><a href="/opengl-tutorial/tut01/zh.md">第一课</a></li>
+            <li class="nav-header">SUPPORT</li>
+            <li><a href="mailto:guanghui.qu@cocos2d-x.org">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+{{content}}
+        </div>
+      </div>
+    </div>
+
+    <style>
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="/assets/js/bootstrap.js">
+    </script>
+
+    <script>
+      $('#menu [data-section="{{page.section}}"]').addClass('active');
+    </script>
+
+  </body>
+</html>
+

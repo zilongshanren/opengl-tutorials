@@ -1,0 +1,133 @@
+/* @license
+ * MyFonts Webfont Build ID 2341569, 2012-08-09T16:00:31-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Proxima Nova Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * 
+ * Webfont: Proxima Nova Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ * 
+ * Webfont: Proxima Nova Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+ * 
+ * Webfont: Proxima Nova Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * 
+ * Â© 2012 Bitstream Inc
+*/
+
+/* TODO: Switch the names of these files over to ProximaNova_Bold */
+ @font-face {font-family: 'ProximaNova-Bold';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.ttf') format('truetype');}
+ 
+ @font-face {font-family: 'ProximaNova-Light';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.ttf') format('truetype');}
+
+ @font-face {font-family: 'ProximaNova-Regular';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.ttf') format('truetype');}
+ 
+ @font-face {font-family: 'ProximaNova-Thin';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.ttf') format('truetype');}
+
+body {
+  padding-top: 100px;
+  font-family: 'ProximaNova-Regular', Helvetica, sans-serif;
+}
+
+.navbar-inner {
+  padding: 5px 0px;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+.navbar .nav.pull-right li {
+  line-height: 42px
+}
+.navbar .nav.pull-right a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 13px;
+  font-family: 'ProximaNova-Bold';
+  font-weight: normal;
+  text-shadow: none;
+}
+.navbar .nav.pull-right li:last-child a {
+  margin-right: 0px;
+}
+.navbar .nav.pull-right a:hover {
+  color: #fff;
+}
+.navbar .nav.pull-right a.orange-button {
+  display: inline-block;
+}
+
+#menu {
+  min-height: 800px;
+  border-right: 1px solid #eee;
+  width: 180px;
+}
+@media (min-width: 1200px) {
+  width: 200px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  #menu {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  #menu {
+    min-height: 0px;
+    border: none;
+    position: static;
+    width: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+#menu li.nav-header {
+  color: #111;
+  font-family: 'ProximaNova-Bold';
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+#menu li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#menu li a {
+  color: #999;
+  text-shadow: none;
+}
+#menu li.active a {
+  background-color: #33a5c8;
+  color: #fff;
+}
+
+.orange-button {
+  display: inline-block;
+  line-height: 20px;
+  border-radius: 20px;
+  vertical-align: middle;
+  color: #ffffff !important;
+  background-image: linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
+  background-image: -moz-linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
+  background-image: -webkit-linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
+  padding: 0px 10px;
+}
+.orange-button {
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+

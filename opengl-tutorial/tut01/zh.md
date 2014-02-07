@@ -10,7 +10,7 @@ section: opengl-tutorial/tut01
 </style>
 
 
-免责申明（必读！）：本博客提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
+免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/)
 
@@ -33,7 +33,20 @@ section: opengl-tutorial/tut01
 在这里，你将学习新式OpenGL（OpenGL 3和4），而多数网上教程还在讲『老式OpenGL』（OpenGL 1和2）。所以，在你的脑袋乱成一锅粥之前，把它们都搁在一边吧。
 
 
-###Building the tutorials
+###生成课程中的代码
+
+所有课程代码都能在Windows、Linux、和Mac上生成，而且过程大体相同：
+
+- 更新驱动 ！！赶快更新吧。我可是提醒过你哟。
+- 下载C++编译器。
+- 安装CMake
+- 下载全部课程代码
+- 用CMake创建工程
+- 编译工程
+- 试试这些例子！
+
+各平台的详细过程如下。可能需要一些改动。若不确定，看看Windows平台说明，按需改动一下。
+
 All tutorials can be built on Windows, Linux and Mac. For all these platforms, the procedure is roughly the same :
 
 update your drivers !! doooo it. You’ve been warned.

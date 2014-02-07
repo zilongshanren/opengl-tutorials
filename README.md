@@ -3,11 +3,11 @@ OpenGL Tutorials
 
 社区维护的OpenGL教程网站。 http://opengl.zilongshanren.com
 
-所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来.
+所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来. 具体请参考“如果添加一篇新的文章”。
 
 ##前言
 
-翻译教程的顺序为http://www.opengl-tutorial.org/ 和 http://www.arcsynthesis.org/gltut/. 经过本人的实践，我想这两个网站上面的教程同时翻译，每周翻译各翻译一篇。
+翻译教程的顺序为http://www.opengl-tutorial.org/ 和 http://www.arcsynthesis.org/gltut/. 
 
 最后翻译 http://www.scratchapixel.com/ 上面的教程。
 

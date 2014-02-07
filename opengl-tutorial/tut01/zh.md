@@ -1,32 +1,12 @@
----
-layout: default
-title: 打开一个窗口
-section: /opengl-tutorial/tut01
----
-<style>
-  h3 {
-    margin: 20px 0px 10px 0px;
-  }
-</style>
-
-免责申明（必读!）：本博客提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
-
-原文出处：http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/
-
 ##Tutorial 1: Opening a window
 ##第一课： 新建一个窗口
 
 ###Introduction
-###简介
-
 Welcome to the first tutorial !
-欢迎来到第一课！
 
 Before jumping into OpenGL, you will first learn how to build the code that goes with each tutorial, how to run it, and most importantly, how to play with the code yourself.
-在学习OpenGL之前，我们将先学习如何生成，运行，和玩转（最重要的一点）课程中的代码。
 
 ###Prerequisites
-
 No special prerequisite is needed to follow these tutorials. Experience with any programming langage ( C, Java, Lisp, Javascript, whatever ) is better to fully understand the code, but not needed ;
 it will merely be more complicated to learn two things at the same time.
 
@@ -89,7 +69,7 @@ They are so many Linux variants out there that it’s impossible to list every p
 
 1.Install the latest drivers. We highly recommend the closed-source binary drivers. It’s not GNU or whatever, but they work. If your distribution doesn’t provide an automatic install, try Ubuntu’s guide.
 
-2.Install all needed compilers, tools & libs. Complete list is : cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev . Use sudo apt-get install xxxx or su && yum install xxxx.
+2.Install all needed compilers, tools & libs. Complete list is : cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev . Use sudo apt-get install ***** or su && yum install ******.
 
 3.Download the source code and unzip it, for instance in ~/Projects/OpenGLTutorials/
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 新建一个窗口
-section: opengl-tutorial/tut01/zh
+title: 打开一个窗口
+section: /opengl-tutorial/tut01
 ---
 <style>
   h3 {
@@ -89,7 +89,7 @@ They are so many Linux variants out there that it’s impossible to list every p
 
 1.Install the latest drivers. We highly recommend the closed-source binary drivers. It’s not GNU or whatever, but they work. If your distribution doesn’t provide an automatic install, try Ubuntu’s guide.
 
-2.Install all needed compilers, tools & libs. Complete list is : cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev . Use sudo apt-get install ***** or su && yum install ******.
+2.Install all needed compilers, tools & libs. Complete list is : cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev . Use sudo apt-get install xxxx or su && yum install xxxx.
 
 3.Download the source code and unzip it, for instance in ~/Projects/OpenGLTutorials/
 

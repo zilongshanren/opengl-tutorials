@@ -45,21 +45,14 @@ section: opengl-tutorial/tut01
 - 编译工程
 - 试试这些例子！
 
-各平台的详细过程如下。可能需要一些改动。若不确定，看看Windows平台说明，按需改动一下。
+各平台的详细代码生成过程将会在后面一一给出，不过具体每个平台可能会有差异。如果你不确定，可以去看看Windows平台的生成说明，然后按照需改动一下来适应你自己的平台。
 
-All tutorials can be built on Windows, Linux and Mac. For all these platforms, the procedure is roughly the same :
+####在Windows平台上生成课程代码
 
-update your drivers !! doooo it. You’ve been warned.
-Download a compiler, if you don’t already have one.
-Install CMake
-Download the source code of the tutorials
-Generate a project using CMake
-Build the project
-Play with the samples !
-Detailed procedures will now be given for each platform. Adaptations may be required. If unsure, read the instruction for Windows and try to adapt them.
-
-####Building on Windows
 1.Updating your drivers shoud be easy. Just go to NVIDIA’s or AMD’s website and download the drivers. If unsure about your GPU model : Control Panel -> System and Security -> System -> Device Manager -> Display adapter. If you have an integrated Intel GPU, drivers are usually provided by your OEM (Dell, HP, …).
+1.更新驱动。 打开NVIDIA或者AMD的官网并下载适合你的显卡的最新驱动。 如果你不知道你的GPU型号的话，可以通过下列步骤来查询：
+
+打开“控制面板” -> “系统和安全” -> “系统” -> “设备管理器” -> 
 
 2.We suggest using Visual Studio 2010 Express as a compiler. You can download it for free here. If you prefer using MinGW, we recommend using Qt Creator. Install whichever you want. Subsequent steps will be explained with Visual Studio, but should be similar with any other IDE.
 

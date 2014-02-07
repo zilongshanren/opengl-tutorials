@@ -1,0 +1,4 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+encoding: utf-8

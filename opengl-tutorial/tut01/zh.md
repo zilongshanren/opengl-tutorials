@@ -1,3 +1,14 @@
+---
+layout: default
+title: 第一课： 新建一个窗口
+section: opengl-tutorial/tut01
+---
+<style>
+  h3 {
+    margin: 20px 0px 10px 0px;
+  }
+</style>
+
 ##Tutorial 1: Opening a window
 ##第一课： 新建一个窗口
 

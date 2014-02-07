@@ -23,13 +23,13 @@
 */
 
 /* TODO: Switch the names of these files over to ProximaNova_Bold */
- @font-face {font-family: 'ProximaNova-Bold';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.ttf') format('truetype');}
+ /* @font-face {font-family: 'ProximaNova-Bold';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/23BAC1_2_0.ttf') format('truetype');} */
  
- @font-face {font-family: 'ProximaNova-Light';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.ttf') format('truetype');}
+ /* @font-face {font-family: 'ProximaNova-Light';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Light.ttf') format('truetype');} */
 
- @font-face {font-family: 'ProximaNova-Regular';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.ttf') format('truetype');}
+ /* @font-face {font-family: 'ProximaNova-Regular';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Regular.ttf') format('truetype');} */
  
- @font-face {font-family: 'ProximaNova-Thin';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.ttf') format('truetype');}
+ /* @font-face {font-family: 'ProximaNova-Thin';src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot');src: url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.eot?#iefix') format('embedded-opentype'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.woff') format('woff'),url('http://jetstrap-site.s3.amazonaws.com/webfonts/ProximaNova_Thin.ttf') format('truetype');} */
 
 body {
   padding-top: 100px;

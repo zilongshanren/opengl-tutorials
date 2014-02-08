@@ -3,11 +3,11 @@ OpenGL Tutorials
 
 社区维护的OpenGL教程网站。 http://opengl.zilongshanren.com
 
-所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来.
+所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来. 具体请参考“如果添加一篇新的文章”。
 
 ##前言
 
-翻译教程的顺序为http://www.opengl-tutorial.org/ 和 http://www.arcsynthesis.org/gltut/. 经过本人的实践，我想这两个网站上面的教程同时翻译，每周翻译各翻译一篇。
+翻译教程的顺序为http://www.opengl-tutorial.org/ 和 http://www.arcsynthesis.org/gltut/. 
 
 最后翻译 http://www.scratchapixel.com/ 上面的教程。
 
@@ -15,9 +15,9 @@ OpenGL Tutorials
 ##计划
 第一阶段：
 
-每周翻译两篇文章：
+每周翻译一篇文章：
 
-opengl-tutorial上面有18篇教程，gltut上面有17篇。 暂定为9周（计划两个月翻译完，留一周为review时间）。
+opengl-tutorial上面有18篇教程，gltut上面有17篇。 暂定为20周（计划一年翻译完）。
 
 
 第二阶段:
@@ -112,7 +112,7 @@ section: opengl-tutorial/tut02
 最后，记得加上免责申明和原文链接。范文如下：
 
 ```
-免责申明:免责申明（必读！）：本博客提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
+免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：http://whateverdomainis.com
 ```
@@ -123,3 +123,4 @@ section: opengl-tutorial/tut02
 (注：所有贡献人的名字都会在此列出，欢迎大家踊跃参与。)
 
 [子龙山人](http://www.zilongshanren.com)
+[泰然网](http://www.ityran.com)

@@ -10,44 +10,49 @@ section: opengl-tutorial/tut01
 </style>
 
 
-免责申明:免责申明（必读！）：本博客提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
+免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
-原文链接：http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/
+原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/)
 
-##Tutorial 1: Opening a window
 ##第一课： 新建一个窗口
 
-###Introduction
-Welcome to the first tutorial !
+###简介
 
-Before jumping into OpenGL, you will first learn how to build the code that goes with each tutorial, how to run it, and most importantly, how to play with the code yourself.
+欢迎来到第一课！
 
-###Prerequisites
-No special prerequisite is needed to follow these tutorials. Experience with any programming langage ( C, Java, Lisp, Javascript, whatever ) is better to fully understand the code, but not needed ;
-it will merely be more complicated to learn two things at the same time.
+在学习OpenGL之前，我们将先学习如何生成，运行，和玩转（最重要的一点）课程中的代码。
 
-All tutorials are written in “Easy C++” : Lots of effort has been made to make the code as simple as possible. No templates, no classes, no pointers.
-This way, you will be able to understand everything even if you only know Java.
+###预备知识
 
-###Forget Everything
-You don’t have to know anything, but you have to forget everything you know about OpenGL.
-If you know about something that looks like glBegin(), forget it. Here you will learn modern OpenGL (OpenGL 3 and 4) , and most online tutorials teach “old” OpenGL (OpenGL 1 and 2).
-So forget everything you might know before your brain melts from the mix.
+不需要特别的预备知识。如果你有C、Java、Lisp、Javascript等编程语言的经验，那么理解课程代码会更快；但这不是必需的；如果没有，那么也仅仅是同时学两样东西（编程语言+OpenGL）会稍微复杂点而已。
 
-###Building the tutorials
-All tutorials can be built on Windows, Linux and Mac. For all these platforms, the procedure is roughly the same :
+课程全部用“傻瓜式C++”编写：我费了很大劲尽量让代码简单些。代码里没有模板（template）、类或指针。就是说，即使只懂Java，也能理解所有内容。
 
-update your drivers !! doooo it. You’ve been warned.
-Download a compiler, if you don’t already have one.
-Install CMake
-Download the source code of the tutorials
-Generate a project using CMake
-Build the project
-Play with the samples !
-Detailed procedures will now be given for each platform. Adaptations may be required. If unsure, read the instruction for Windows and try to adapt them.
+###忘记一切
+如前面所说，我们不需要预备知识；但请暂时把『老式OpenGL』先忘了吧（例如glBegin()这类东西）。
+在这里，你将学习新式OpenGL（OpenGL 3和4），而多数网上教程还在讲『老式OpenGL』（OpenGL 1和2）。所以，在你的脑袋乱成一锅粥之前，把它们都搁在一边吧。
 
-####Building on Windows
+
+###生成课程中的代码
+
+所有课程代码都能在Windows、Linux、和Mac上生成，而且过程大体相同：
+
+- 更新驱动 ！！赶快更新吧。我可是提醒过你哟。
+- 下载C++编译器。
+- 安装CMake
+- 下载全部课程代码
+- 用CMake创建工程
+- 编译工程
+- 试试这些例子！
+
+各平台的详细代码生成过程将会在后面一一给出，不过具体每个平台可能会有差异。如果你不确定，可以去看看Windows平台的生成说明，然后按照需改动一下来适应你自己的平台。
+
+####在Windows平台上生成课程代码
+
 1.Updating your drivers shoud be easy. Just go to NVIDIA’s or AMD’s website and download the drivers. If unsure about your GPU model : Control Panel -> System and Security -> System -> Device Manager -> Display adapter. If you have an integrated Intel GPU, drivers are usually provided by your OEM (Dell, HP, …).
+1.更新驱动。 打开NVIDIA或者AMD的官网并下载适合你的显卡的最新驱动。 如果你不知道你的GPU型号的话，可以通过下列步骤来查询：
+
+打开“控制面板” -> “系统和安全” -> “系统” -> “设备管理器” -> 
 
 2.We suggest using Visual Studio 2010 Express as a compiler. You can download it for free here. If you prefer using MinGW, we recommend using Qt Creator. Install whichever you want. Subsequent steps will be explained with Visual Studio, but should be similar with any other IDE.
 

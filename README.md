@@ -17,7 +17,7 @@ OpenGL Tutorials
 
 每周翻译一篇文章：
 
-opengl-tutorial上面有18篇教程，gltut上面有17篇。 暂定为20周（计划一年翻译完）。
+opengl-tutorial上面有18篇教程，gltut上面有17篇。 暂定为35周（计划一年翻译完）。
 
 
 第二阶段:

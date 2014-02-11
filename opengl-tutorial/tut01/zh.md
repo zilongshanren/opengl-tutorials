@@ -49,122 +49,128 @@ section: opengl-tutorial/tut01
 
 ####在Windows平台上生成课程代码
 
-1.Updating your drivers shoud be easy. Just go to NVIDIA’s or AMD’s website and download the drivers. If unsure about your GPU model : Control Panel -> System and Security -> System -> Device Manager -> Display adapter. If you have an integrated Intel GPU, drivers are usually provided by your OEM (Dell, HP, …).
-1.更新驱动。 打开NVIDIA或者AMD的官网并下载适合你的显卡的最新驱动。 如果你不知道你的GPU型号的话，可以通过下列步骤来查询：
+1. 更新驱动应该很轻松。直接去NVIDIA或者AMD的官网下载。若不清楚GPU的型号:控制面板->系统和安全->系统->设备管理器->显示适配器。如果是Intel集成显卡，一般由电脑厂商（Dell、HP等）提供驱动。
 
-打开“控制面板” -> “系统和安全” -> “系统” -> “设备管理器” -> 
+2. 建议用Visual Studio 2010 Express来编译。 这里可以免费下载。 若喜欢用MinGW，推荐[Qt Creator](http://qt-project.org/)。安装哪个都行。下列步骤是用Visual Studio讲解的，其他IDE也差不多。
 
-2.We suggest using Visual Studio 2010 Express as a compiler. You can download it for free here. If you prefer using MinGW, we recommend using Qt Creator. Install whichever you want. Subsequent steps will be explained with Visual Studio, but should be similar with any other IDE.
+3. 从这里下载安装 [CMake](http://www.cmake.org/cmake/resources/software.html) 。
 
-3.Download CMake from here and install it
+4. [下载课程源码](http://www.opengl-tutorial.org/?page_id=200) ，解压到例如C:/Users/XYZ/Projects/OpenGLTutorials .
 
-4.Download the source code and unzip it, for instance in C:\Users\XYZ\Projects\OpenGLTutorials\ .
-
-5.Launch CMake. In the first line, navigate to the unzipped folder. If unsure, choose the folder that contains the CMakeLists.txt file. In the second line, enter where you want all the compiler’s stuff to live. For instance, you can choose C:\Users\XYZ\Projects\OpenGLTutorials-build-Visual2010-32bits\, or C:\Users\XYZ\Projects\OpenGLTutorials\build\Visual2010-32bits\. Notice that it can be anywhere, not necessarily in the same folder.
+5. 启动CMake。让第一栏路径指向刚才解压缩的文件夹；若不确定，就选包含CMakeLists.txt的文件夹。第二栏，填CMake输出路径 （译者注：这里CMake输出一个可以在Visual Studio中打开和编译的工程）。例如C:/Users/XYZ/Projects/OpenGLTutorials-build-Visual2010-32bits，或者C:/Users/XYZ/Projects/OpenGLTutorials/build/Visual2010-32bits。注意，此处可随便填，不一定要和源码在同一文件夹。
 
 ![cmake](./res/CMake.png)
 
-6.Click on the Configure button. Since this is the first time you configure the project, CMake will ask you which compiler you would like to use. Choose wisely depending on step 1. If you have a 64 bit Windows, you can choose 64 bits; if you don’t know, choose 32 bits.
+6. 点击Configure。由于是首次configure工程，CMake会让你选择编译器。根据步骤1选择。如果你的Windows是64位的，选64位。不清楚就选32位。\
 
-7.Click on Configure until all red lines disappear. Click on Generate. Your Visual Studio project is now created. You can forget about CMake; uninstall it if you want.
-Open C:\Users\XYZ\Projects\OpenGLTutorials-build-Visual2010-32bits\. You will see a Tutorials.sln file : open it with Visual Studio.
+7. 再点Configure直至红色行全部消失。点Generate。Visual Studio工程创建完毕。Visual Studio工程创建完毕。不再需要CMake了，可以卸载掉。
+
+8. 打开 C:/Users/XYZ/Projects/OpenGL/Tutorials-build-Visual2010-32bits会看到Tutorials.sln文件（译者注：这就是CMake生成的VS项目文件），用Visual Studio打开它。
 
 ![directories](./res/directories.png)
 
-In the Build menu, click Build All. Every tutorial and dependency will be compiled. Each executable will also be copied back into C:\Users\XYZ\Projects\OpenGLTutorials\ . Hopefuly no error occurs.
+在 Build 菜单中，点Build All。每个课程代码和依赖项都会被编译。生成的可执行文件会出现在 C:/Users/XYZ/Projects/OpenGLTutorials。但愿不会报错。
 
 ![visual_2010-300x212](./res/visual_2010-300x212.png)
 
-9. Open C:\Users\XYZ\Projects\OpenGLTutorials\playground, and launch playground.exe. A black window should appear.
+9. 打开C:/Users/XYZ/Projects/OpenGLTutorials/playground，运行playground.exe，会弹出一个黑色窗口。
 
 ![empty_window-300x231](./res/empty_window-300x231.png)
 
-You can also launch any tutorial from inside Visual Studio, but you will need to setup the Working Directory first : right-click on Playground, go to Properties, choose Debugging, Working Directory, Browse, and navigate to C:\Users\XYZ\Projects\OpenGLTutorials\playground\. Validate. Right-click on Playground once again, “Choose as startup project”. You can now debug the code by pressing F5.
+也可以在Visual Studio中运行任意一课的代码，但得先设置工作目录：右键点击Playground，选择Debugging、Working Directory、Browse，设置路径为C:/Users/XYZ/Projects/OpenGLTutorials/playground。验证一下。再次右键点击Playground，“Choose as startup project”。按F5就可以调试了。
 
 ![WorkingDir-300x211](./res/WorkingDir-300x211.png)
 
 ![StartupProject-185x300](./res/StartupProject-185x300.png)
 
-###Building on Linux
-They are so many Linux variants out there that it’s impossible to list every possible platform. Adapt if required, and don’t hesitate to read your distribution’s documentation.
+###在Linux上生成
+Linux版本众多，这里不可能列出所有的平台。按需变通一下吧，也不妨看一下发行版文档。
 
-1.Install the latest drivers. We highly recommend the closed-source binary drivers. It’s not GNU or whatever, but they work. If your distribution doesn’t provide an automatic install, try Ubuntu’s guide.
+1. 安装最新驱动。强烈推荐闭源的二进制驱动；它们不开源，但好用。如果发行版不提供自动安装，试试[Ubuntu指南](http://help.ubuntu.com/community/BinaryDriverHowto).
 
-2.Install all needed compilers, tools & libs. Complete list is : cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev . Use sudo apt-get install ***** or su && yum install ******.
+2. 安装全部需要的编译器、工具和库。完整清单如下：cmake make g++ libx11-dev libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxext-dev 。 用 sudo apt-get install ***** 或者 su && yum install ******。
 
-3.Download the source code and unzip it, for instance in ~/Projects/OpenGLTutorials/
+3. [下载课程源码](http://www.opengl-tutorial.org/?page_id=200) 并解压到如 ~/Projects/OpenGLTutorials/
 
-4.cd in ~/Projects/OpenGLTutorials/ and enter the following commands :
+4. 接着输入如下命令 :
+
+```
+cd ~/Projects/OpenGLTutorials/
 mkdir build
 cd build
 cmake ..
+```
 
-5.A makefile has been created in the build/ directory.
+5. build/目录会创建一个makefile文件。
 
-6.type “make all”. Every tutorial and dependency will be compiled. Each executable will also be copied back into ~/Projects/OpenGLTutorials/ . Hopefuly no error occurs.
+6. 键入“make all”。每个课程代码和依赖项都会被编译。生成的可执行文件在~/Projects/OpenGLTutorials/。但愿不会报错。
 
-7.Open ~/Projects/OpenGLTutorials/playground, and launch ./playground. A black window should appear.
+7. 打开~/Projects/OpenGLTutorials/playground，运行./playground会弹出一个黑色窗口。
 
-Note that you really should use an IDE like Qt Creator. In particular, this one has built-in support for CMake, and it will provide a much nicer experience when debugging. Here are the instructions for QtCreator :
+提示：推荐使用[Qt Creator](http://qt-project.org/)作为IDE。值得一提的是，Qt Creator内置支持CMake，调试起来也顺手。如下是QtCreator使用说明：
 
-1.In QtCreator, go to File->Tools->Options->Compile&Execute->CMake
+1.在QtCreator中打开Tools->Options->Compile-&Execute->CMake
 
-2.Set the path to CMake. This is most probably /usr/bin/cmake
+2.设置CMake路径。很可能像这样/usr/bin/cmake
 
-3.File->Open Project; Select tutorials/CMakeLists.txt
+3.File->Open Project；选择 tutorials/CMakeLists.txt
 
-4.Select a build directory, preferably outside the tutorials folder
+4.选择生成目录，最好选择tutorials文件夹外面
 
-5.Optionally set -DCMAKE_BUILD_TYPE=Debug in the parameters box. Validate.
+5.还可以在参数栏中设置-DCMAKE_BUILD_TYPE=Debug。验证一下。
 
-6.Click on the hammer on the bottom. The tutorials can now be launched from the tutorials/ folder.
+6.点击下面的锤子图标。现在教程可以从tutorials/文件夹启动了。
 
-7.To run the tutorials from QtCreator, click on Projects->Execution parameters->Working Directory, and select the directory where the shaders, textures & models live. Example for tutorial 2 : ~/opengl-tutorial/tutorial02_red_triangle/
+7.要想在QtCreator中运行教程源码，点击Projects->Execution parameters->Working Directory，选择着色器、纹理和模型所在目录。以第二课为例：~/opengl-tutorial/tutorial02_red_triangle/
 
 
-###Building on Mac
-Mac OS doesn’t support OpenGL 3.3. Recent Macs with MacOS 10.7 Lion and compatible GPUs can run OpenGL 3.2, but not 3.3. Use the 2.1 port of the tutorials instead. Apart from that, the procedure is very similar to Windows’ (Makefiles are also supported, but won’t be explained here) :
+###在Mac上生成
 
-1.Install XCode from the Mac App Store
+Mac OS不支持OpenGL 3.3。最近，搭载MacOS 10.7 Lion和兼容型GPU的Mac电脑可以跑OpenGL 3.2了，但3.3还不行；所以我们用2.1移植版的课程代码。除此外，其他步骤和Windows类似（也支持Makefiles，此处不赘述）：
 
-2.Download CMake, and install the .dmg . You don’t need to install the command-line tools.
+1.从Mac App Store安装XCode
 
-3.Download the source code (VERSION 2.1 !!) and unzip it, for instance in ~/Projects/OpenGLTutorials/ .
+2.下载[CMake](http://www.cmake.org/cmake/resources/software.html)，安装.dmg。无需安装命令行工具。
 
-4.Launch CMake (Applications->CMake). In the first line, navigate to the unzipped folder. If unsure, choose the folder that contains the CMakeLists.txt file. In the second line, enter where you want all the compiler’s stuff to live. For instance, you can choose ~/Projects/OpenGLTutorials_bin_XCode/. Notice that it can be anywhere, not necessarily in the same folder.
+3.下载[课程源码](http://www.opengl-tutorial.org/?page_id=200) （2.1版！！）解压到如~/Projects/OpenGLTutorials/ .
 
-5.Click on the Configure button. Since this is the first time you configure the project, CMake will ask you which compiler you would like to use. Choose Xcode.
+4.启动CMake （Applications->CMake）。让第一栏路径指向刚才解压缩的文件夹，不确定就选包含CMakeLists.txt的文件夹。第二栏，填CMake输出路径。例如~/Projects/OpenGLTutorials_bin_XCode/。注意，这里可以随便填，不一定要和源码在同一文件夹。
 
-6.Click on Configure until all red lines disappear. Click on Generate. Your Xcode project is now created. You can forget about CMake; uninstall it if you want.
+5.点击Configure。由于是首次configure工程，CMake会让你选择编译器。选择Xcode。
 
-7.Open ~/Projects/OpenGLTutorials_bin_XCode/ . You will see a Tutorials.xcodeproj file : open it.
+6.再点Configure直至红色行全部消失。点Generate。Xcode项目创建完毕。不再需要CMake了，可以卸载掉。
 
-8.Select the desired tutorial to run in Xcode’s Scheme panel, and use the Run button to compile & run :
+7.打开~/Projects/OpenGLTutorials_bin_XCode/会看到Tutorials.xcodeproj文件：打开它。
+
+8.选择一个教程，在Xcode的Scheme面板上运行，点击Run按钮编译和运行：
 
 ![Xcode-projectselection](./res/Xcode-projectselection.png)
 
-##Note for Code::Blocks
-Due to 2 bugs (one in C::B, one in CMake), you have to edit the command-line in Project->Build Options->Make commands, as follows :
+**在第二课及后续课程中，Run按钮就失效了。下一版本会解决这个bug。目前，请用Cmd-B键运行（双击源码文件夹/tutorialX/tutorialX，或者通过终端）。**
+
+##关于Code::Blocks的说明
+由于C::B和CMake中各有一个bug，你得在Project->Build->Options->Make commands中手动设置编译命令，如下图所示：
 
 ![CodeBlocksFix](./res/CodeBlocksFix.png)
 
-You also have to setup the working directory yourself : Project->Properties -> Build targets -> tutorial N -> execution working dir ( it’s src_dir/tutorial_N/ ).
+同时你还得手动设置工作目录：Project->Properties->Build targets->tutorial N->execution working dir（即src_dir/tutorial_N/）。
 
-##Running the tutorials
-You should run the tutorials directly from the right directory : simply double-click on the executable. If you like command line best, cd to the right directory.
+##运行课程例子
+一定要在正确的目录下运行课程例子：你可以双击可执行文件；如果爱用命令行，请用cd命令切换到正确的目录。
 
-If you want to run the tutorials from the IDE, don’t forget to read the instructions above to set the correct working directory.
+若想从IDE中运行程序，别忘了看看上面的说明——先正确设置工作目录。
 
-##How to follow these tutorials
-Each tutorial comes with its source code and data, which can be found in tutorialXX/. However, you will never modify these projects : they are for reference only. Open playground/playground.cpp, and tweak this file instead. Torture it in any way you like. If you are lost, simply cut’n paste any tutorial in it, and everything should be back to normal.
+##如何学习本课程
+每课都附有源码和数据，可在tutorialXX/找到。不过，建议您不改动这些工程，将它们作为参考；推荐在playground/playground.cpp中做试验，怎么折腾都行。要是弄乱了，就去粘一段课程代码，一切就会恢复正常。
 
-We will provide snippets of code all along the tutorials. Don’t hesitate to cut’n paste them directly in the playground while you’re reading : experimentation is good. Avoid simply reading the finished code, you won’t learn a lot this way. Even with simple cut’n pasting, you’ll get your boatload of problems.
+我们会在整个教程中提供代码片段。不妨在看教程时，直接把它们复制到playground里跑跑看。动手实验才是王道。单纯看别人写好的代码学不了多少。即使仅仅粘贴一下代码，也会碰到不少问题。
 
-##Opening a window
-Finally ! OpenGL code !
-Well, not really. All tutorials show you the “low level” way to do things, so that you can see that no magic happens. But this part is actually very boring and useless, so we will use GLFW, an external library, to do this for us instead. If you really wanted to, you could use the Win32 API on Windows, the X11 API on Linux, and the Cocoa API on Mac; or use another library like SFML, FreeGLUT, SDL, … see the Links page.
+##新建一个窗口
+终于！写OpenGL代码的时刻来了！
 
-Ok, let’s go. First, we’ll have to deal with dependencies : we need some basic stuff to display messages in the console :
+呃，其实还早着呢。有的教程都会教你以“底层”的方式做事，好让你清楚每一步的原理。但这往往很无聊也无用。所以，我们用一个外部的库——GLFW来帮我们处理窗口、键盘消息等细节。你也可以使用Windows的Win32 API、Linux的X11 API，或Mac的Cocoa API；或者用别的库，比如SFML、FreeGLUT、SDL等，请参见链接页。
+
+我们开始吧。从处理依赖库开始：我们要用一些基本库，在控制台显示消息：
 
 ```
 // Include standard headers
@@ -172,21 +178,21 @@ Ok, let’s go. First, we’ll have to deal with dependencies : we need some bas
 #include <stdlib.h>
 ```
 
-First, GLEW. So this one actually is a little bit magic, but let’s leave this for later.
+然后是GLEW库。这东西的原理，我们以后再说。
 
 ```
 // Include GLEW. Always include it before gl.h and glfw.h, since it's a bit magic.
 #include <GL/glew.h>
 ```
 
-We decided to let GLFW handle the window and the keyboard, so let’s include it too :
+我们使用GLFW库处理窗口和键盘消息，把它也包含进来：
 
 ```
 // Include GLFW
 #include <GL/glfw.h>
 ```
 
-We don’t actually need this one right now, but this is a library for 3D mathematics. It will prove very useful soon. There is no magic in GLM, you can write your own if you want; it’s just handy. The “using namespace” is there to avoid typing “glm::vec3″, but “vec3″ instead.
+下面的GLM是个很有用的三维数学库，我们暂时没用到，但很快就会用上。GLM库很好用，但没有什么神奇的，你自己也可以写一个。添加“using namespace”是为了不用写“glm::vec3”，直接写“vec3”。
 
 ```
 // Include GLM
@@ -194,13 +200,13 @@ We don’t actually need this one right now, but this is a library for 3D mathem
 using namespace glm;
 ```
 
-If you cut’n paste all these #include’s in playground.cpp, the compiler will complain that there is no main() function. So let’s create one :
+如果把这些#include都粘贴到playground.cpp，编译器会报错，说缺少main函数。所以我们创建一个 ：
 
 ```
 int main(){
 ```
 
-First thing to do it to initialize GLFW :
+首先初始化GLFW ：
 
 ```
 // Initialise GLFW
@@ -211,7 +217,7 @@ if( !glfwInit() )
 }
 ```
 
-We can now create our first OpenGL window !
+可以创建我们的第一个OpenGL窗口啦！
 
 ```
 glfwOpenWindowHint(GLFW_FSAA_SAMPLES, 4); // 4x antialiasing
@@ -237,7 +243,7 @@ if (glewInit() != GLEW_OK) {
 glfwSetWindowTitle( "Tutorial 01" );
 ```
 
-Build this and run. A window should appear, and be closed right away. Of course ! We need to wait until the user hits the Escape key :
+编译并运行。一个窗口弹出后立即关闭了。可不是嘛！还没设置等待用户Esc按键再关闭呢：
 
 ```
 // Ensure we can capture the escape key being pressed below
@@ -254,5 +260,5 @@ while( glfwGetKey( GLFW_KEY_ESC ) != GLFW_PRESS &&
 glfwGetWindowParam( GLFW_OPENED ) );
 ```
 
-And this concludes our first tutorial ! In Tutorial 2, you will learn how to actually draw a triangle.
+第一课就到这啦！第二课会教大家画三角形。
 

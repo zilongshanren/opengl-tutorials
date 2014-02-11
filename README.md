@@ -3,7 +3,7 @@ OpenGL Tutorials
 
 社区维护的OpenGL教程网站。 http://opengl.zilongshanren.com
 
-所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来. 具体请参考“如果添加一篇新的文章”（必读！）。
+所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来. `具体请参考“如果添加一篇新的文章”（必读！）`。
 
 ##前言
 
@@ -27,7 +27,7 @@ opengl-tutorial上面有18篇教程，gltut上面有17篇。 暂定为35周（�
 
 采用github的fork & pull request的方式，如果不是很熟悉的可以参考[这个网站](http://happycasts.net/episodes?tag_id=2)上面的教程。
 
-**注： 请大家在贡献的时候一定要先同步主仓库，避免做重复的工作！！！**
+`注： 请大家在贡献的时候一定要先同步主仓库，避免做重复的工作！！！`
 
 ##目录结构
 

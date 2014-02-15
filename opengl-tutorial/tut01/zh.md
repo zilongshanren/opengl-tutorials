@@ -14,6 +14,8 @@ section: opengl-tutorial/tut01
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-1-opening-a-window-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-1-opening-a-window-zh/)
+
 ##第一课： 新建一个窗口
 
 ###简介

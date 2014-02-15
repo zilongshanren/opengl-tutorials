@@ -121,8 +121,15 @@ section: opengl-tutorial/tut02
 
 
 
-##贡献人列表
+##贡献人列表(排名不分先后)
 (注：所有贡献人的名字都会在此列出，欢迎大家踊跃参与。)
 
-[子龙山人](http://www.zilongshanren.com)
+[missjing](https://github.com/missjing)
+
+[张书瀚](https://github.com/zrqsmcx)
+
+[cybercser](https://github.com/cybercser)
+
 [泰然网](http://www.ityran.com)
+
+[子龙山人](http://www.zilongshanren.com)

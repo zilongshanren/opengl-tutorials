@@ -13,6 +13,8 @@ section: opengl-tutorial/tut05
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-5-a-textured-cube-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-5-a-textured-cube-zh/)
+
 ## 第五课：纹理立方体
 
 本课学习如下几点：

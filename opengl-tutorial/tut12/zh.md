@@ -13,6 +13,8 @@ section: opengl-tutorial/tut12
 
 原文链接：[http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/](http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/)
+
 ## 第十二课：OpenGL扩展
 
 ### 扩展

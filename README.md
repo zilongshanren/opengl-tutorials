@@ -5,12 +5,17 @@ OpenGL Tutorials
 
 所有网站由jeklly自动生成，但是大家在贡献的时候要按照规则来. `具体请参考“如果添加一篇新的文章”（必读！）`。
 
+##License
+
+The content of this project itself is licensed under the Creative Commons Attribution 3.0 license, and the underlying source code used to format and display that content is licensed under the MIT license.
+
 ##前言
 
 翻译教程的顺序为http://www.opengl-tutorial.org/ 和 http://www.arcsynthesis.org/gltut/. 
 
 最后翻译 http://www.scratchapixel.com/ 上面的教程。
 
+免责申明：以上所有教程的版权归原作者所有，任何人或者任何组织不得以任何赢利目的对这些教程进行篡改，衍生和再发布。
 
 ##计划
 第一阶段：

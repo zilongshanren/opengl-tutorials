@@ -13,6 +13,8 @@ section: opengl-tutorial/tut04
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-4-a-colored-cube/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-4-a-colored-cube/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-4-a-colored-cube-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-4-a-colored-cube-zh/)
+
 ## 第四课：彩色立方体
 
 欢迎来到第四课！你将学到：

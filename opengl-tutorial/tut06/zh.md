@@ -13,6 +13,8 @@ section: opengl-tutorial/tut06
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-6-keyboard-and-mouse-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-6-keyboard-and-mouse-zh/)
+
 ## 第六课：键盘和鼠标
 
 

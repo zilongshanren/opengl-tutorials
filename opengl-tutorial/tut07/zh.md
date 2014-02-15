@@ -13,6 +13,8 @@ section: opengl-tutorial/tut07
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-7-model-loading/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-7-model-loading/)
 
+原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-7-model-loading-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-7-model-loading-zh/)
+
 
 ## 第七课：模型加载
 

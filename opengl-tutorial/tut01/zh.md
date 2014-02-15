@@ -262,3 +262,4 @@ glfwGetWindowParam( GLFW_OPENED ) );
 
 第一课就到这啦！第二课会教大家画三角形。
 
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

@@ -17,6 +17,8 @@ The content of this project itself is licensed under the Creative Commons Attrib
 
 免责申明：以上所有教程的版权归原作者所有，任何人或者任何组织不得以任何赢利目的对这些教程进行篡改，衍生和再发布。
 
+部分译文出自: https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation
+
 ##计划
 第一阶段：
 

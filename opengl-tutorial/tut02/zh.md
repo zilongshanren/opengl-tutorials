@@ -294,3 +294,5 @@ glUseProgram(programID);
 ![red_triangle](res/red_triangle.png)
 
 下一课中我们将学习变换：如何设置你的相机，移动物体等等。
+
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

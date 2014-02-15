@@ -125,3 +125,5 @@ OpenGL扩展提供了一个很好的方式来增强OpenGL的功能，它依赖�
 - [GLEW](http://glew.sourceforge.net/) OpenGL标准扩展库
 - [gl3w](https://github.com/skaslev/gl3w) 简单的OpenGL 3/4核心配置加载
 
+
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

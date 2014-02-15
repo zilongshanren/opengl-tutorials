@@ -489,3 +489,5 @@ DXT压缩源自DirectX。和OpenGL相比，DirectX中的V纹理坐标是反过�
 
 - [Using texture compression in OpenGL](http://www.oldunreal.com/editing/s3tc/ARB_texture_compression.pdf) , Sébastien Domine, NVIDIA
 
+
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

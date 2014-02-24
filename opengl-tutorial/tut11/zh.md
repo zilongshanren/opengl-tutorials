@@ -13,7 +13,7 @@ section: opengl-tutorial/tut11
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-8-basic-shading/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-8-basic-shading/)
 
-原译文链接: [https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%209%20VBO%20Indexing%20opengl-tutorial.org.md](https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%209%20VBO%20Indexing%20opengl-tutorial.org.md)
+原译文链接: [https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2011%202D%20text%20opengl-tutorial.org.md](https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2011%202D%20text%20opengl-tutorial.org.md)
 
 第十一课：2D文本
 
@@ -124,3 +124,4 @@ fragment shader的工作也很少：
 
 如果您需要处理大量的文本，可以参考这篇[Valve的文章](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf)。
 
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

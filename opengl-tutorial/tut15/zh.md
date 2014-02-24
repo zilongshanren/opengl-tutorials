@@ -13,7 +13,7 @@ section: opengl-tutorial/tut15
 
 原文链接：[http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/)
 
-原译文链接: [http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/](http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/)
+原译文链接: [https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2015%20Lightmaps%20opengl-toturial.org.md](https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2015%20Lightmaps%20opengl-toturial.org.md)
 
 第十五课：光照贴图（Lightmap）
 ===
@@ -60,3 +60,4 @@ color = texture2D( myTextureSampler, UV, -2.0 ).rgb;
 
 - 后期处理中可将背景填充为黑色，这一点我后面还会再讲。
 	
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

@@ -13,7 +13,7 @@ section: opengl-tutorial/tut16
 
 原文链接：[http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-12-opengl-extensions/)
 
-原译文链接: [http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/](http://www.opengl-tutorial.org/zh-hans/intermediate-tutorials-zh/tutorial-12-opengl-extensions-zh/)
+原译文链接: [https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2016%20Shadow%20mapping%20opengl-tutorial.org.md](https://github.com/cybercser/OpenGL_3_3_Tutorial_Translation/blob/master/Tutorial%2016%20Shadow%20mapping%20opengl-tutorial.org.md)
 
 第十六课：阴影贴图（Shadow mapping）
 ===
@@ -410,3 +410,5 @@ CSM和LiSPSM解决的问题一模一样，但方式不同。CSM仅对观察视�
 
 总结一句，我建议您坚持尽可能使用预计算的光照贴图，只为动态物体使用阴影贴图。并且要确保两者的视觉效果协调一致，任何一者效果太好/太坏都不合适。
 
+
+`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 第一章: OpenGL 介绍 
-section: gltut/tut01
+section: cg-gltut/tut01
 ---
 <style>
   h3 {

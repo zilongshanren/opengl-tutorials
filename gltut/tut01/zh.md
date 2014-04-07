@@ -41,3 +41,38 @@ In terms of geometry, a vector can represent one of two concepts: a position or 
 A vector can also represent a direction. Direction vectors do not have an origin; they simply specify a direction in space.
 
 These are all direction vectors, but the vectors B and D are the same, even though they are drawn in different locations:
+
+####Figure 2. Direction Vectors
+
+![figure2](./res/VectorDirections.svg)
+
+That's all well and good for geometry, but vectors can also be described numerically. A vector in this case is a sequence of numbers, one for each dimension.
+
+So a two-dimensional vector has two numbers; a three-dimensional vector has three. And so forth. Scalars, numerically speaking, are just a single number.
+
+Each of the numbers within a vector is called a component. Each component usually has a name. For our purposes, the first component of a vector is the X component.
+
+The second component is the Y component, the third is the Z, and if there is a fourth, it is called W.
+
+When writing vectors in text, they are written with parenthesis.
+
+So a 3D vector could be (0, 2, 4); the X component is 0, the Y component is 2, and the Z component is 4. When writing them as part of an equation, they are written as follows:
+
+![columnVector](./res/ColumnVector.svg)
+
+n math equations, vector variables are either in boldface or written with an arrow over them.
+
+When drawing vectors graphically, one makes a distinction between position vectors and direction vectors. However, numerically there is no difference between the two.
+
+The only difference is in how you use them, not how you represent them with numbers. So you could consider a position a direction and then apply some vector operation to them,
+and then consider the result a position again.
+
+Though vectors have individual numerical components, a vector as a whole can have a number of mathematical operations applied to them.
+
+We will show a few of them, with both their geometric and numerical representations.
+
+###Vector Addition.
+
+You can take two vectors and add them together. Graphically, this works as follows:
+
+

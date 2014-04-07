@@ -13,67 +13,69 @@ section: cg-gltut/tut01
 
 原文链接：[http://www.arcsynthesis.org/gltut/Basics/Introduction.html](http://www.arcsynthesis.org/gltut/Basics/Introduction.html)
 
-##Part I. The Basics
+##第一部分： 基础
 
-Graphics programming can be a daunting task when starting out. The rendering pipeline involves a large number of steps,
-each dealing with a variety of math operations. It has stages that run actual programs to compute results for the next.
-Mastering this pipeline, being able to use it as a tool to achieve a visual effect, is the essence of being a graphics programmer.
+进行图形编程对于许多新人来说是一项非常艰难的任务。渲染管线（rendering pipeline）涉及了许多步骤，每一个步骤都需要进行大量数学操作。某一些渲染管线的阶段(stage)还可以运行一些程序，程序的结果可以供后续阶段使用。
 
-This section of the book will introduce the basic math necessary for 3D graphics. It will introduce the rendering pipeline as defined by OpenGL.
-And it will demonstrate how data flows through the graphics pipeline.
+理解渲染管线并且能够把它当成实现许多视觉效果的工具，这是对于一个图形程序员(graphics programmer)的基本要求。
 
-Unlike most sections of this text, there is no source code or project associated with this section. Here, we will be discussing vector math, graphical rendering theory, and OpenGL. This serves as a primer to the rest of the book.
+本章将介绍3D图形学中涉及到的基础数学。同时，它也会简单地介绍一下OpenGL的渲染管线。并且，我会向你展示数据是如何在渲染管线中流动的。
 
-###Vector Math
+本章与其它章节有所不同，因为它不包含任何的源代码。在本章中，我们将会学习到向量数学，图形渲染理论以及OpenGL。
 
-This book assumes that you are familiar with algebra and geometry, but not necessarily with vector math. Later material will bring you up to speed on more complex subjects, but this will introduce the basics of vector math.
+这也是阅读本系列教程的入门篇。
 
-A vector can have many meanings, depending on whether we are talking geometrically or numerically. In either case, vectors have dimensionality; this represents the number of dimensions that the vector has. A two-dimensional vector is restricted to a single plane, while a three-dimensional vector can point in any physical space. Vectors can have higher dimensions, but generally we only deal with dimensions between 2 and 4.
+###Vector Math(向量数学)
 
-Technically, a vector can have only one dimension. Such a vector is called a scalar.
+本书假设你熟悉基本的代数和几何，但是你不一定要了解向量数学。后面的内容会向你介绍一些更复杂的内容，但是，本章，我们只介绍基本的vector math.
 
-In terms of geometry, a vector can represent one of two concepts: a position or a direction within a particular space. A vector position represents a specific location in space. For example, on this graph, we have a vector position A:
+一个向量可以有许多含义，具体含义取决于我们是怎么看待它的，是从几何角度来看，还是从数值角度来看。这两个角度，向量都是具有维度(dimension)的。
 
-####Figure 1. Position Vectors
+一个二维向量被给在一个平面内，而一个三维向量则可以指向任何物理空间。向量还可以有更多的维度，但是，通常我们讨论向量都只关心2维到4维的情况。
+
+技术上来讲，一个向量也可以只含一个维度。这样的向量叫做标量(scalar).
+
+就几何意义来说，一个向量可以表示两层含义：一个点或者一个给定平面内的一个方向。一个向量坐标可以表示一个空间内的一个位置。比如，下图中我们有一个位置向量A:
+
+####Figure 1. Position Vectors(位置向量)
 
 ![figure1](./res/VectorPosition.svg)
 
-A vector can also represent a direction. Direction vectors do not have an origin; they simply specify a direction in space.
+一个向量也可以表示一个方向。方向向量是没有原点（origin）的。它仅仅表示的是一个空间中的方向而已。
 
-These are all direction vectors, but the vectors B and D are the same, even though they are drawn in different locations:
+下面图中的向量都是方向向量，但是向量B和向量D是等价的，虽然看起来它们画的位置可能有所差别.
 
-####Figure 2. Direction Vectors
+####Figure 2. Direction Vectors(方向向量)
 
 ![figure2](./res/VectorDirections.svg)
 
-That's all well and good for geometry, but vectors can also be described numerically. A vector in this case is a sequence of numbers, one for each dimension.
+从几何的角度来看，这样子描述向量是非常好的，但是向量也可以有它的数值(numerically)表示形式。在这种情况下，一个向量表示成一串数字序列，每一维有一个相应的数字。
 
-So a two-dimensional vector has two numbers; a three-dimensional vector has three. And so forth. Scalars, numerically speaking, are just a single number.
+因此，一个二维的向量有两个数，而一个三维的向量则有三个数。以此类推，n维的向量就有n维的数字。而标量，从数值表示来看，它只是单个的数字而已。
 
-Each of the numbers within a vector is called a component. Each component usually has a name. For our purposes, the first component of a vector is the X component.
+向量中的每一维里的数被叫做向量的分量(component)。每一个分量通常会指定名字。比如，一个向量的第一个分量一般叫做X分量。
 
-The second component is the Y component, the third is the Z, and if there is a fourth, it is called W.
+第二个分量叫做Y分量，第三个是Z分量。如果它有第四个分量的话，那么就命名为W。
 
-When writing vectors in text, they are written with parenthesis.
+当用文本来书写向量的时候，它们通常用括号把向量的各个分量括起来，中间用逗号隔开。
 
-So a 3D vector could be (0, 2, 4); the X component is 0, the Y component is 2, and the Z component is 4. When writing them as part of an equation, they are written as follows:
+因此，一个3D向量可以写成(0,2,4);它的x分量是0，y分量是2，而z分量是4.当我们把向量写作一个方程式的时候，它的写法如下：
 
 ![columnVector](./res/ColumnVector.svg)
 
-In math equations, vector variables are either in boldface or written with an arrow over them.
+在数学方程中，向量的名字同学用粗体表示，而它的头上会有一个箭头符号,表示这个变量是有方向的。
 
-When drawing vectors graphically, one makes a distinction between position vectors and direction vectors. However, numerically there is no difference between the two.
+当我们作图来表示向量的时候，点向量和方向向量是有所区别的。然后，它们的数值表示却看不出差别。
 
-The only difference is in how you use them, not how you represent them with numbers. So you could consider a position a direction and then apply some vector operation to them,
-and then consider the result a position again.
+惟一的区别就是你怎么使用它们。因此，你可以把一个向量当做是一个位置或者一个方向，然后对它做相应的向量运算，然后再考虑它的结果是一个位置还是一个方向。
 
-Though vectors have individual numerical components, a vector as a whole can have a number of mathematical operations applied to them.
+虽然，向量有单独的数值分量，但是一个向量作为一个整体也可以对它进行一些数学操作。
 
-We will show a few of them, with both their geometric and numerical representations.
+我们接下来会介绍如何从几何和数值角度来进行向量的运算.
 
-###Vector Addition.
+###Vector Addition(向量加法)
 
-You can take two vectors and add them together. Graphically, this works as follows:
+你可以把两个向量相加。它的几何意义如下所示：
 
 ####Figure 3. Vector Addition
 
@@ -81,36 +83,37 @@ You can take two vectors and add them together. Graphically, this works as follo
 
 Remember that vector directions can be shifted around without changing their values. So if you put two vectors head to tail,
 the vector sum is simply the direction from the tail of the first vector to the head of the last.
+记住：向量的方向是可以平移而它的值是不会受到影响的。因此，你可以把两个向量首尾相连，那么两个向量的和就是从第一个向量的头指向第二个向量的尾。（我们假定箭头表示向量的尾部。）
 
 ###Figure 4. Vector Addition Head-to-Tail
 
 ![VectorAdditionHeads](./res/VectorAdditionHeads.svg)
 
-Numerically, the sum of two vectors is just the sum of the corresponding components:
+从数值角度来看，向量的加法仅仅是两个分量分别相加即可。
 
 ####Equation 1. Vector Addition with Numbers
 
 ![VectorAdditionNum](./res/VectorAdditionNum.svg)
 
-Any operation where you perform an operation on each component of a vector is called a component-wise operation.
+任何操作，如何它是针对向量的每一个分量进行运算，那么此操作叫做“逐分量”操作。
 
-Vector addition is component-wise. Any component-wise operation on two vectors requires that the two vectors have the same dimensionality.
+向量国法是逐分量操作。任何逐分量操作都要求两个进行运算的向量有相同的维度。
 
 ####Vector Negation and Subtraction.
 
-You can negate a vector. This reverses its direction:
+你也可以对一个向量取反。它的结果就是调转向量的方向:
 
-####Figure 5. Vector Negation
+####Figure 5. Vector Negation(向量取反)
 
 ![VectorNegation](./res/VectorNegation.svg)
 
-Numerically, this means negating each component of the vector.
+从数值角度来看，这意味着向量的每一个分量都要取反。
 
 ####Equation 2. Vector Negation
 
 ![VectorNegationNum](./res/VectorNegationNum.svg)
 
-Just as with scalar math, vector subtraction is the same as addition with the negation of the second vector.
+正如同标量数学一样，向量的减法其实就是向量的加法，只不过第二个向量先做取反操作而已。
 
 ####Figure 6. Vector Subtraction
 
@@ -118,83 +121,86 @@ Just as with scalar math, vector subtraction is the same as addition with the ne
 
 ####Vector Multiplication.
 
-Vector multiplication is one of the few vector operations that has no real geometric equivalent.
+向量的乘法是诸多向量运算之中没有几何意义的一个。
 
-To multiply a direction by another, or multiplying a position by another position, does not really make sense. That does not mean that the numerical equivalent is not useful, though.
+把两个方向相乘，或者把两个位置相乘，这并得不出什么几何意义。但是，这并不意味着向量乘法没有用了。
 
-Multiplying two vectors numerically is simply component-wise multiplication, much like vector addition.
+两个向量的简洁只需要把两个向量的对应分量相乘即可，这一点和向量的加法很像。
 
-####Equation 3. Vector Multiplication
+####Equation 3. Vector Multiplication(向量乘法)
 
 ![VectorMultiplicationNum](./res/VectorMultiplicationNum.svg)
 
 ####Vector/Scalar Operations.
 
-Vectors can be operated on by scalar values. Recall that scalars are just single numbers. Vectors can be multiplied by scalars.
+向量也可以和标量参与运算。回想一下，标量就是一个数字。向量是可以乘以一个标量的。
 
-This magnifies or shrinks the length of the vector, depending on the scalar value.
+这样会使向量的长度变大或者变小，取决于被乘标量的值。
 
-####Figure 7. Vector Scaling
+####Figure 7. Vector Scaling(向量缩放)
 
 ![VectorScalarMult](./res/VectorScalarMult.svg)
 
-Numerically, this is a component-wise multiplication, where each component of the vector is multiplied with each component of the scalar.
+从数值角度来看，这也是一个逐分量的乘法，向量的每一个分量都和这个标量进行乘法运算.
 
 ####Equation 4. Vector-Scalar Multiplication
 
 ![VectorScalarMultNum](./res/VectorScalarMultNum.svg)
 
-Scalars can also be added to vectors. This, like vector-to-vector multiplication, has no geometric representation. It is a component-wise addition of the scalar with each component of the vector.
+标量也可以与向量相加。这一点跟向量与向量的乘法类似，它也是没有几何意义的。我们只需要把向量的每一个分量与此标量相加即可。
 
 ####Equation 5. Vector-Scalar Addition
 
 ![VectorScalarAddNum](./res/VectorScalarAddNum.svg)
 
-####Vector Algebra.
+####Vector Algebra(向量代数)
 
-It is useful to know a bit about the relationships between these kinds of vector operations.
+掌握这些向量操作及其几何、数值意义对我们搞图形学是非常有好处的。
 
-Vector addition and multiplication follow many of the same rules for scalar addition and multiplication. They are commutative, associative, and distributive.
+向量与向量的加法和乘法规则同样适应于标量与向量的乘法与加法。它们都满足交换率(commutative)，结合率（associative）和分配率(distributive).
 
 ####Equation 6. Vector Algebra
 
 ![VectorMathProperties](./res/VectorMathProperties.svg)
 
-Vector/scalar operations have similar properties.
+向量/标量 运算有类似的属性。
 
-**Length**. Vectors have a length. The length of a vector direction is the distance from the starting point to the ending point.
+**长度(Length)**.
+向量是有长度的。一个向量的长度是从它的起始点到结束点的距离。
 
-Numerically, computing the distance requires this equation:
+从数值角度来看，我们可以通过以下方程式来计算。
 
 ####Equation 7. Vector Length
 
 ![VectorLengthNum](./res/VectorLengthNum.svg)
 
-This uses the Pythagorean theorem to compute the length of the vector. This works for vectors of arbitrary dimensions, not just two or three.
+这里使用了毕达哥拉期(Pythagorean)定理来计算向量的长度。这个方程可以适应于任何维度的向量长度计算，不只是2维或者3维。
 
+**单位向量和正规化(Unit Vectors and Normalization)**.
+一个向量如果长度为1，那么我们管它叫做单位向量（unit vector）。这个通常用来表示一个方向上的基准长度。
+一个单位向量在数学方程中可以表示为a^（注意这个^要放在变量的名字上面）.
 
-**Unit Vectors and Normalization**. A vector that has a length of exactly one is called a unit vector. This represents a pure direction with a standard, unit length. A unit vector variable in math equations is written with a ^ over the variable name.
+一个向量也可以通过正规化方法转化成一个单位向量。我们可以通过除以向量的长度来计算，或者乘以向量长度的倒数(reciprocal)。
 
-A vector can be converted into a unit vector by normalizing it. This is done by dividing the vector by its length. Or rather, multiplication by the reciprocal of the length.
-
-####Equation 8. Vector Normalization
+####Equation 8. Vector Normalization(向量正规化)
 
 ![VectorNormalizationNum](./res/VectorNormalizationNum.svg)
 
-This is not all of the vector math that we will use in these tutorials. New vector math operations will be introduced and explained as needed when they are first used.
+这里并没有展示我们教程中将会用到的所有的向量运算。一些新的向量运算会在后续章节中逐步引入。(译者：比如向量的点积和叉积就没有介绍).
 
-And unlike the math operations introduced here, most of them are not component-wise operations.
+本节介绍的向量运算大部分都是逐分量的运算。
 
-**Range Notation**. This book will frequently use standard notation to specify that a value must be within a certain range.
+**区间符号(Range Notation)**.
+本书中会经常使用到一些标准符号用来表示一个值在某一个区间范围内。
 
-If a value is constrained between 0 and 1, and it may actually have the values 0 and 1, then it is said to be “on the range” [0, 1].
+如果一个值的范围是0到1，同时它包含0和1，那么此值的区间表示形式为[0,1].
 
-The square brackets mean that the range includes the value next to it.
+这个方括号表示范围是包含该值的。
 
-If a value is constrained between 0 and 1, but it may not actually have a value of 0, then it is said to be on the range (0, 1].
+如果一个值的范围是0到1，但是它不包含0，同时包含1，那么它的区间表示为(0,1].
 
-The parenthesis means that the range does not include that value.
+这里的括号表示不包含该边界值。
 
-If a value is constrained to 0 or any number greater than zero, then the infinity notation will be used. This range is represented by [0, ∞).
+如果一个值的范围是大于等于，且它的上限是正无穷大，那么它的区间表示形式为[0, ∞).
 
-Note that infinity can never be reached, so it is always exclusive. A constraint to any number less than zero, but not including zero would be on the range (-∞, 0).
+相反，如果一个值的范围是小于0并且它的下限是负无穷大，那么可以表示为 (-∞, 0).

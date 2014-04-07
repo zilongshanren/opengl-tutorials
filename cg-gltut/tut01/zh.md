@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 第一章: OpenGL 介绍 
+title: 第一课： 新建一个窗口
 section: cg-gltut/tut01
 ---
 <style>

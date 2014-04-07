@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 第一课： 新建一个窗口
+title: 第一章: 预备知识
 section: cg-gltut/tut01
 ---
 <style>
@@ -75,7 +75,7 @@ We will show a few of them, with both their geometric and numerical representati
 
 You can take two vectors and add them together. Graphically, this works as follows:
 
-![VectorAddition](.res/VectorAddition.svg)
+![VectorAddition](./res/VectorAddition.svg)
 
 Remember that vector directions can be shifted around without changing their values. So if you put two vectors head to tail,
 the vector sum is simply the direction from the tail of the first vector to the head of the last.
@@ -106,7 +106,7 @@ Numerically, this means negating each component of the vector.
 
 ####Equation 2. Vector Negation
 
-![VectorNegationNum](.res/VectorNegationNum.svg)
+![VectorNegationNum](./res/VectorNegationNum.svg)
 
 Just as with scalar math, vector subtraction is the same as addition with the negation of the second vector.
 

@@ -60,7 +60,7 @@ So a 3D vector could be (0, 2, 4); the X component is 0, the Y component is 2, a
 
 ![columnVector](./res/ColumnVector.svg)
 
-n math equations, vector variables are either in boldface or written with an arrow over them.
+In math equations, vector variables are either in boldface or written with an arrow over them.
 
 When drawing vectors graphically, one makes a distinction between position vectors and direction vectors. However, numerically there is no difference between the two.
 
@@ -74,6 +74,8 @@ We will show a few of them, with both their geometric and numerical representati
 ###Vector Addition.
 
 You can take two vectors and add them together. Graphically, this works as follows:
+
+####Figure 3. Vector Addition
 
 ![VectorAddition](./res/VectorAddition.svg)
 
@@ -183,7 +185,7 @@ This is not all of the vector math that we will use in these tutorials. New vect
 
 And unlike the math operations introduced here, most of them are not component-wise operations.
 
-Range Notation. This book will frequently use standard notation to specify that a value must be within a certain range.
+**Range Notation**. This book will frequently use standard notation to specify that a value must be within a certain range.
 
 If a value is constrained between 0 and 1, and it may actually have the values 0 and 1, then it is said to be “on the range” [0, 1].
 

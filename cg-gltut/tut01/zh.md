@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 第一章: 预备知识
+title: 第一章:预备知识
 section: cg-gltut/tut01
 ---
 <style>

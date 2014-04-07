@@ -75,4 +75,124 @@ We will show a few of them, with both their geometric and numerical representati
 
 You can take two vectors and add them together. Graphically, this works as follows:
 
+![VectorAddition](.res/VectorAddition.svg)
 
+Remember that vector directions can be shifted around without changing their values. So if you put two vectors head to tail,
+the vector sum is simply the direction from the tail of the first vector to the head of the last.
+
+###Figure 4. Vector Addition Head-to-Tail
+
+![VectorAdditionHeads](./res/VectorAdditionHeads.svg)
+
+Numerically, the sum of two vectors is just the sum of the corresponding components:
+
+####Equation 1. Vector Addition with Numbers
+
+![VectorAdditionNum](./res/VectorAdditionNum.svg)
+
+Any operation where you perform an operation on each component of a vector is called a component-wise operation.
+
+Vector addition is component-wise. Any component-wise operation on two vectors requires that the two vectors have the same dimensionality.
+
+####Vector Negation and Subtraction.
+
+You can negate a vector. This reverses its direction:
+
+####Figure 5. Vector Negation
+
+![VectorNegation](./res/VectorNegation.svg)
+
+Numerically, this means negating each component of the vector.
+
+####Equation 2. Vector Negation
+
+![VectorNegationNum](.res/VectorNegationNum.svg)
+
+Just as with scalar math, vector subtraction is the same as addition with the negation of the second vector.
+
+####Figure 6. Vector Subtraction
+
+![VectorSubtraction](./res/VectorSubtraction.svg)
+
+####Vector Multiplication.
+
+Vector multiplication is one of the few vector operations that has no real geometric equivalent.
+
+To multiply a direction by another, or multiplying a position by another position, does not really make sense. That does not mean that the numerical equivalent is not useful, though.
+
+Multiplying two vectors numerically is simply component-wise multiplication, much like vector addition.
+
+####Equation 3. Vector Multiplication
+
+![VectorMultiplicationNum](./res/VectorMultiplicationNum.svg)
+
+####Vector/Scalar Operations.
+
+Vectors can be operated on by scalar values. Recall that scalars are just single numbers. Vectors can be multiplied by scalars.
+
+This magnifies or shrinks the length of the vector, depending on the scalar value.
+
+####Figure 7. Vector Scaling
+
+![VectorScalarMult](./res/VectorScalarMult.svg)
+
+Numerically, this is a component-wise multiplication, where each component of the vector is multiplied with each component of the scalar.
+
+####Equation 4. Vector-Scalar Multiplication
+
+![VectorScalarMultNum](./res/VectorScalarMultNum.svg)
+
+Scalars can also be added to vectors. This, like vector-to-vector multiplication, has no geometric representation. It is a component-wise addition of the scalar with each component of the vector.
+
+####Equation 5. Vector-Scalar Addition
+
+![VectorScalarAddNum](./res/VectorScalarAddNum.svg)
+
+####Vector Algebra.
+
+It is useful to know a bit about the relationships between these kinds of vector operations.
+
+Vector addition and multiplication follow many of the same rules for scalar addition and multiplication. They are commutative, associative, and distributive.
+
+####Equation 6. Vector Algebra
+
+![VectorMathProperties](./res/VectorMathProperties.svg)
+
+Vector/scalar operations have similar properties.
+
+**Length**. Vectors have a length. The length of a vector direction is the distance from the starting point to the ending point.
+
+Numerically, computing the distance requires this equation:
+
+####Equation 7. Vector Length
+
+![VectorLengthNum](./res/VectorLengthNum.svg)
+
+This uses the Pythagorean theorem to compute the length of the vector. This works for vectors of arbitrary dimensions, not just two or three.
+
+
+**Unit Vectors and Normalization**. A vector that has a length of exactly one is called a unit vector. This represents a pure direction with a standard, unit length. A unit vector variable in math equations is written with a ^ over the variable name.
+
+A vector can be converted into a unit vector by normalizing it. This is done by dividing the vector by its length. Or rather, multiplication by the reciprocal of the length.
+
+####Equation 8. Vector Normalization
+
+![VectorNormalizationNum](./res/VectorNormalizationNum.svg)
+
+This is not all of the vector math that we will use in these tutorials. New vector math operations will be introduced and explained as needed when they are first used.
+
+And unlike the math operations introduced here, most of them are not component-wise operations.
+
+Range Notation. This book will frequently use standard notation to specify that a value must be within a certain range.
+
+If a value is constrained between 0 and 1, and it may actually have the values 0 and 1, then it is said to be “on the range” [0, 1].
+
+The square brackets mean that the range includes the value next to it.
+
+If a value is constrained between 0 and 1, but it may not actually have a value of 0, then it is said to be on the range (0, 1].
+
+The parenthesis means that the range does not include that value.
+
+If a value is constrained to 0 or any number greater than zero, then the infinity notation will be used. This range is represented by [0, ∞).
+
+Note that infinity can never be reached, so it is always exclusive. A constraint to any number less than zero, but not including zero would be on the range (-∞, 0).

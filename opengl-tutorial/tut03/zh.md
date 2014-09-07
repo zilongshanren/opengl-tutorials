@@ -107,7 +107,7 @@ vec4 transformedVector = myMatrix * myVector; // Yeah, it's pretty much the same
 ```cpp
 #include <glm/transform.hpp> // after <glm/glm.hpp>
 
-glm::mat4 myMatrix = glm::translate(10,0,0);
+glm::mat4 myMatrix = glm::translate(glm::vec3(10,0,0));
 glm::vec4 myVector(10,10,10,0);
 glm::vec4 transformedVector = myMatrix * myVector; // guess the result
 ```
@@ -146,7 +146,7 @@ w还是没变。你也许会问：“缩放一个向量”有什么用？嗯，�
 
 ```cpp
 // Use #include <glm/gtc/matrix_transform.hpp> and #include <glm/gtx/transform.hpp>
-glm::mat4 myScalingMatrix = glm::scale(2,2,2);
+glm::mat4 myScalingMatrix = glm::scale(glm::vec3(2,2,2));
 ```
 
 ####旋转矩阵（Rotation matrices）

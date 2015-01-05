@@ -1,10 +1,3 @@
-免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
-
-
-原文链接：[ http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/]( http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/)
-
-原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-3-matrices-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-3-matrices-zh/)
-
 ##第三课： 矩阵
 
 引擎完全没有推动飞船。飞船静止在原处，而引擎推动了环绕着飞船的宇宙。

@@ -1,9 +1,3 @@
-免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
-
-原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/)
-
-原译文链接: [http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-1-opening-a-window-zh/](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-1-opening-a-window-zh/)
-
 ##第一课： 新建一个窗口
 
 ###简介

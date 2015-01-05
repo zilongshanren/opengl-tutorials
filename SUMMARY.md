@@ -9,7 +9,6 @@
    * [第六课：键盘和鼠标](tut06/zh.md)
    * [第七课：模型加载](tut07/zh.md)
    * [第八课：基本着色](tut08/zh.md)
-
 * OpenGL中级教程
    * [第九课：VBO索引](tut09/zh.md)
    * [第十课：透明](tut10/zh.md)

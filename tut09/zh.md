@@ -1,13 +1,3 @@
----
-layout: default
-title: 第九课：VBO索引
-section: opengl-tutorial/tut09
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
 
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
@@ -99,4 +89,3 @@ OpenGL中的索引VBO
 ---
 虽然和索引没有直接关系，但现在去看看“FPS计数器”是很合适的——这样我们就能看到，索引究竟能提升多少性能。[“工具——调试器”](http://www.opengl-tutorial.org/miscellaneous/useful-tools-links/#header-4)中还有些其他和性能相关的工具。
 
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

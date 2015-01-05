@@ -1,14 +1,3 @@
----
-layout: default
-title: 第四课：彩色立方体
-section: opengl-tutorial/tut04
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
-
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-4-a-colored-cube/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-4-a-colored-cube/)
@@ -248,6 +237,3 @@ g_color_buffer_data[3*v+2] = your blue color here;
 ```
 
 - 完成上面习题后，试令颜色在每帧都改变。你需要在每一帧都调用glBufferData。请确保已先绑定（glBindBuffer）了合适的缓冲区！
-
-
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

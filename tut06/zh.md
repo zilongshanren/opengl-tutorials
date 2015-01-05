@@ -1,14 +1,3 @@
----
-layout: default
-title: 第六课：键盘和鼠标
-section: opengl-tutorial/tut06
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
-
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/)
@@ -237,6 +226,3 @@ glEnable(GL_CULL_FACE);
 - 限制verticalAngle，使之不能颠倒方向
 - 创建一个相机，使它绕着物体旋转 ( position = ObjectCenter + ( radius * cos(time), height, radius * sin(time) ) )；然后将半径/高度/时间的变化绑定到键盘/鼠标上，诸如此类。
 - 玩得开心！
-
-
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

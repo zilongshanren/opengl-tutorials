@@ -1,14 +1,3 @@
----
-layout: default
-title: 第五课：纹理立方体
-section: opengl-tutorial/tut05
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
-
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-5-a-textured-cube/)
@@ -490,6 +479,3 @@ DXT压缩源自DirectX。和OpenGL相比，DirectX中的V纹理坐标是反过�
 ### 参考文献
 
 - [Using texture compression in OpenGL](http://www.oldunreal.com/editing/s3tc/ARB_texture_compression.pdf) , Sébastien Domine, NVIDIA
-
-
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

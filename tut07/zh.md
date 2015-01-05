@@ -1,14 +1,3 @@
----
-layout: default
-title: 第七课：模型加载
-section: opengl-tutorial/tut07
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
-
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-7-model-loading/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-7-model-loading/)
@@ -269,5 +258,3 @@ glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3), &vertices[0],
 ### 其他模型格式及加载器
 
 这个小巧的加载器应该比较适合初学，不过别在实际中使用它。参考一下[实用链接和工具](http://www.opengl-tutorial.org/miscellaneous/useful-tools-links/)页面，看看有什么能用的。不过请注意，等到第九课才会真正用到这些工具。
-
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

@@ -1,14 +1,3 @@
----
-layout: default
-title: 第八课：基础光照模型
-section: opengl-tutorial/tut08
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
-
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
 原文链接：[http://www.opengl-tutorial.org/beginners-tutorials/tutorial-8-basic-shading/](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-8-basic-shading/)
@@ -293,5 +282,3 @@ pow(cosAlpha,5)用来控制镜面反射的波瓣。可以增大5来获得更大�
 这个光照模型因为简单，已被使用了很多年。但它有一些问题，所以被microfacet BRDF之类的基于物理的模型代替，后面将会讲到。
 
 在下节课中，我们将学习怎么提高VBO的性能。将是第一节中级课程！
-
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)

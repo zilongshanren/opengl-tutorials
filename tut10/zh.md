@@ -1,13 +1,3 @@
----
-layout: default
-title: 第十课：透明
-section: opengl-tutorial/tut10
----
-<style>
-  h3 {
-	margin: 20px 0px 10px 0px;
-  }
-</style>
 
 免责申明（必读！）：本网站提供的所有教程的翻译原稿均来自于互联网，仅供学习交流之用，切勿进行商业传播。同时，转载时不要移除本申明。如产生任何纠纷，均与本博客所有人、发表该翻译稿之人无任何关系。谢谢合作！
 
@@ -109,4 +99,3 @@ alpha通道的概念很简单。之前是写RGB结果，现在改为写RGBA：
     new color = (1, 0.75, 0.25) = the same orange
 
 
-`教程看不懂？教程不够详细？有错别字？` [请点击这里提交问题，我们一定会竭诚为您服务！](https://github.com/andyque/opengl-tutorials/issues/new)
